@@ -19,7 +19,7 @@ class CreateUrlsTable extends Migration
             $table->string('name')->nullable();
             $table->string('short_url');
             $table->string('original_url');
-            $table->dateTime('deleted_at');
+            $table->dateTime('deleted_at')->nullable();
             $table->dateTime('expired_at')->nullable();
             $table->timestamps();
         });

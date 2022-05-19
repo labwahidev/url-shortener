@@ -23,4 +23,13 @@ class UrlController extends controller
     public function store(Request $request){
         return $this->service->store($request);
     }
+
+    public function update(Request $request){
+        return $this->service->update($request);
+    }
+
+    public function delete(Request $request){
+        return $this->service->delete($request);
+    }
+
 }
